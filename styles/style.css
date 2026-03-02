@@ -5,11 +5,15 @@ h1 {
     color: rgb(226, 229, 156);
     text-align:center;
     margin-top:20px;
-
 }
+
+h2 {
+    color: rgb(240, 199, 145);
+    text-align:center;
+    margin-top:15px;
+}
+
    
-
-
 div{
     background-color:rgb(121, 200, 220);
     width: 50vw;
@@ -40,6 +44,11 @@ div{
     background-color: rgb(246, 212, 90);
     border-radius: 50%;
     position: relative
+    transition: all 3s ease-in;
+}
+
+#cara:hover{
+    transform: rotate(360deg) scale(1.4);
 }
 
 .ojos{
@@ -48,6 +57,12 @@ div{
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
     position: absolute;
+    transition: all 3s ease-in;
+}
+
+.ojos:hover{
+    background-color: rgb(211, 48, 48);
+    height: 15%;
 }
 
 #ojoIzq{
@@ -69,7 +84,10 @@ div{
     position: absolute;
     left: 37%;
     bottom:25%;
-
+    box-align: center;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .mejilla{
@@ -89,3 +107,12 @@ div{
     bottom: 30%;
     right: 20%;
 }
+
+
+@keyframes myAnimation {
+  0%   {background-color: rgba(217, 100, 151, 0.855);}
+  25%  {background-color: rgb(255, 0, 128);}
+  50%  {background-color: rgb(217, 0, 255);}
+  100% {background-color: rgb(128, 0, 85);}
+  }
+
